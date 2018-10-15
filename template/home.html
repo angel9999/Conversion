@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Favorite Color</title>
-  </head>
-  <body>
-
-    <form action='/response'>
-      What is your favorite color?<br>
-      <input type="text" name="color">
+{% extends "layout.html"%}
+{% set active_page = "home"%}
+  <title>{% block title%} Home {% endblock%} - My Webpage</title>
+  {% block content%}
+ <form action='/response'>
+     How much do weight?<br>
+      <input type="text" name="number">
       <br><br>
       <input type="submit">
     </form>
-
-  </body>
-</html>
+    {% endblock%}
