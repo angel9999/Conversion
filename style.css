@@ -1,5 +1,6 @@
-form
-{
-display:block;
-margin:auto;
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
 }
