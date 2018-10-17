@@ -9,7 +9,7 @@ def render_main():
 @app.route("/response")
 def render_response():
     number =float( request.args['number'])
-    a = numumber * 0.45359237
+    a = number * 0.45359237
     reply = a
     return render_template('response.html', response = reply)
     
