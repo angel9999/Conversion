@@ -12,6 +12,21 @@ def render_response():
     a = number * 0.45359237
     reply = str(a) + ' kg'
     return render_template('response.html', response = reply)
+
+@app.route("/Page2")
+def render_main1():
+    return render_template('Page2.html')
+
+@app.route("/response3")
+def render_response3():
+    number =float( request.args['number'])
+    a = number * 0.45359237
+    reply = str(a) + ' kg'
+    return render_template('response.html', response = reply)
+
+@app.route("/Page3")
+def render_main3():
+    return render_template('Page3.html')
     
     
 if __name__=="__main__":
