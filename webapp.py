@@ -17,16 +17,23 @@ def render_response():
 def render_main1():
     return render_template('Page2.html')
 
-@app.route("/response3")
-def render_response3():
+@app.route("/response2")
+def render_response2():
     number =float( request.args['number'])
-    a = number * 0.45359237
-    reply = str(a) + ' kg'
-    return render_template('response.html', response = reply)
+    a = number % 28.35
+    reply = str(a) + ' oz'
+    return render_template('response2.html', response = reply)
 
 @app.route("/Page3")
 def render_main3():
     return render_template('Page3.html')
+
+@app.route("/response3")
+def render_response3():
+    number =float( request.args['number'])
+    a = number * 453.592
+    reply = str(a) + ' g'
+    return render_template('response3.html', response = reply)
     
     
 if __name__=="__main__":
