@@ -10,7 +10,7 @@ def render_main():
 def render_response():
     number =float( request.args['number'])
     a = number * 0.45359237
-    reply = a + 'kg'
+    reply = str(a) + 'kg'
     return render_template('response.html', response = reply)
     
     
