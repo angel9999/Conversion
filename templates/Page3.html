@@ -1,0 +1,11 @@
+{% extends "layout.html"%}
+{% set active_page = "home"%}
+  <title>{% block title%} Home {% endblock%} - My Webpage</title>
+  {% block content%}
+ <form action='/response3'>
+     How much do weight?(In pounds)<br>
+      <input type="text" name="number">
+      <br><br>
+      <input type="submit">
+    </form>
+    {% endblock%}
